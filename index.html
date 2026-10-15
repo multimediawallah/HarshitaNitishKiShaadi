@@ -6,6 +6,7 @@
 <meta name="theme-color" content="#a62250" />
 <meta name="description" content="The wedding invitation of Harshita Nagar and Nitish Tiwari — 11 & 12 December in Kolkata." />
 <title>Harshita × Nitish | A Shaadi to Remember</title>
+<link rel="preconnect" href="https://images.weserv.nl">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Yeseva+One&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -120,6 +121,17 @@ h2{font:clamp(2rem,7vw,4.2rem)/1.05 var(--display);letter-spacing:-.035em;margin
 @media(min-width:1000px){.hero{padding-top:42px}.hero-art{width:min(100%,500px)}.hero-photo-window{aspect-ratio:3/4}.hero-copy h1{font-size:clamp(4.4rem,7vw,6.5rem)}.event-card{min-height:400px}.event-art-wrap{min-height:400px}}
 @media(max-width:380px){.splash-content{padding:20px 6px}.splash h1{font-size:2.65rem}.time-box{padding:10px 2px}.time-box span{letter-spacing:.08em;font-size:.56rem}.countdown{gap:5px}.brand-mark{font-size:.86rem}.music-toggle{padding:8px}.music-toggle .music-label{display:none}.memory-strip{gap:7px}.polaroid{padding:5px 5px 15px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal,.event-card{opacity:1;transform:none}}
+
+/* Fast image thumbnails + full-resolution image viewer */
+img[data-full-src]{cursor:zoom-in}
+img[data-full-src]:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.image-lightbox{display:none;position:fixed;inset:0;z-index:1000;background:rgba(20,7,17,.95);align-items:center;justify-content:center;padding:calc(16px + env(safe-area-inset-top)) calc(14px + env(safe-area-inset-right)) calc(16px + env(safe-area-inset-bottom)) calc(14px + env(safe-area-inset-left))}
+.image-lightbox.open{display:flex}
+.image-lightbox-image{display:block;max-width:100%;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));width:auto;height:auto;object-fit:contain;box-shadow:0 18px 60px rgba(0,0,0,.38);border-radius:3px;cursor:default;user-select:none;-webkit-user-select:none}
+.image-lightbox-close{position:absolute;top:calc(12px + env(safe-area-inset-top));right:calc(12px + env(safe-area-inset-right));z-index:2;width:48px;height:48px;border:1px solid rgba(255,255,255,.65);border-radius:50%;background:rgba(54,19,43,.88);color:#fff7e8;font:700 30px/1 var(--sans);display:grid;place-items:center;cursor:pointer;box-shadow:0 5px 20px rgba(0,0,0,.25)}
+.image-lightbox-close:hover,.image-lightbox-close:focus-visible{background:var(--wine);outline:2px solid #ffd66c;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.image-lightbox{scroll-behavior:auto}}
+
 </style>
 </head>
 <body>
@@ -160,7 +172,7 @@ h2{font:clamp(2rem,7vw,4.2rem)/1.05 var(--display);letter-spacing:-.035em;margin
     <span class="floating-motif motif-one" aria-hidden="true">✿</span><span class="floating-motif motif-two" aria-hidden="true">❋</span>
     <div class="hero-wrap">
       <div class="hero-art reveal">
-        <div class="hero-photo-window"><img class="hero-photo" src="https://i.ibb.co/k2gB6dHt/DSC-3436-JPG.jpg" alt="Harshita and Nitish smiling together beneath colourful traditional archways" fetchpriority="high"></div>
+        <div class="hero-photo-window"><img class="hero-photo" src="https://images.weserv.nl/?url=i.ibb.co%2Fk2gB6dHt%2FDSC-3436-JPG.jpg&amp;w=1100&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/k2gB6dHt/DSC-3436-JPG.jpg" alt="Harshita and Nitish smiling together beneath colourful traditional archways" fetchpriority="high" decoding="async" loading="eager"></div>
       </div>
       <div class="hero-copy reveal">
         <div class="hero-stamp">Together is a beautiful place</div>
@@ -196,13 +208,13 @@ h2{font:clamp(2rem,7vw,4.2rem)/1.05 var(--display);letter-spacing:-.035em;margin
       </div>
       <div class="memory-title reveal">Little moments, lots of love</div>
       <div class="memory-strip reveal" aria-label="Swipe through a few memories of Harshita and Nitish">
-        <figure class="polaroid"><img src="https://i.ibb.co/Kzxz2Xn8/IMG-1156-JPG.jpg" alt="Harshita and Nitish dressed up for an evening together" loading="lazy"><figcaption>A little evening magic ♡</figcaption></figure>
-        <figure class="polaroid"><img src="https://i.ibb.co/Q7xGWYS7/IMG-2649-JPG.jpg" alt="A close and happy moment together" loading="lazy"><figcaption>Always better together</figcaption></figure>
-        <figure class="polaroid"><img src="https://i.ibb.co/4Rx3CDPx/IMG-2767-JPG.jpg" alt="Harshita and Nitish sharing a cosy cafe moment" loading="lazy"><figcaption>Coffee & company</figcaption></figure>
-        <figure class="polaroid"><div class="rotate-photo-window"><img src="https://i.ibb.co/tT5cTk4P/IMG-3220-JPG.jpg" alt="A cosy selfie of Harshita and Nitish, rotated to its intended landscape orientation" loading="lazy"></div><figcaption>One more selfie ♡</figcaption></figure>
-        <figure class="polaroid"><img src="https://i.ibb.co/KzwtpD1p/IMG-3596-JPG.jpg" alt="Harshita and Nitish celebrating the bride-to-be" loading="lazy"><figcaption>Almost time to say I do</figcaption></figure>
-        <figure class="polaroid"><img src="https://i.ibb.co/0WLqSq0/IMG-9373-JPG.jpg" alt="Harshita and Nitish dancing at a daytime celebration" loading="lazy"><figcaption>Already bringing the moves</figcaption></figure>
-        <figure class="polaroid"><img src="https://i.ibb.co/wZDvBPL0/IMG-9006-JPG.jpg" alt="A joyful close-up selfie of Harshita and Nitish" loading="lazy"><figcaption>Just us, always ♥</figcaption></figure>
+        <figure class="polaroid"><img src="https://images.weserv.nl/?url=i.ibb.co%2FKzxz2Xn8%2FIMG-1156-JPG.jpg&amp;w=560&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/Kzxz2Xn8/IMG-1156-JPG.jpg" alt="Harshita and Nitish dressed up for an evening together" loading="lazy" decoding="async"><figcaption>A little evening magic ♡</figcaption></figure>
+        <figure class="polaroid"><img src="https://images.weserv.nl/?url=i.ibb.co%2FQ7xGWYS7%2FIMG-2649-JPG.jpg&amp;w=560&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/Q7xGWYS7/IMG-2649-JPG.jpg" alt="A close and happy moment together" loading="lazy" decoding="async"><figcaption>Always better together</figcaption></figure>
+        <figure class="polaroid"><img src="https://images.weserv.nl/?url=i.ibb.co%2F4Rx3CDPx%2FIMG-2767-JPG.jpg&amp;w=560&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/4Rx3CDPx/IMG-2767-JPG.jpg" alt="Harshita and Nitish sharing a cosy cafe moment" loading="lazy" decoding="async"><figcaption>Coffee & company</figcaption></figure>
+        <figure class="polaroid"><div class="rotate-photo-window"><img src="https://images.weserv.nl/?url=i.ibb.co%2FtT5cTk4P%2FIMG-3220-JPG.jpg&amp;w=560&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/tT5cTk4P/IMG-3220-JPG.jpg" alt="A cosy selfie of Harshita and Nitish, rotated to its intended landscape orientation" loading="lazy" decoding="async"></div><figcaption>One more selfie ♡</figcaption></figure>
+        <figure class="polaroid"><img src="https://images.weserv.nl/?url=i.ibb.co%2FKzwtpD1p%2FIMG-3596-JPG.jpg&amp;w=560&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/KzwtpD1p/IMG-3596-JPG.jpg" alt="Harshita and Nitish celebrating the bride-to-be" loading="lazy" decoding="async"><figcaption>Almost time to say I do</figcaption></figure>
+        <figure class="polaroid"><img src="https://images.weserv.nl/?url=i.ibb.co%2F0WLqSq0%2FIMG-9373-JPG.jpg&amp;w=560&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/0WLqSq0/IMG-9373-JPG.jpg" alt="Harshita and Nitish dancing at a daytime celebration" loading="lazy" decoding="async"><figcaption>Already bringing the moves</figcaption></figure>
+        <figure class="polaroid"><img src="https://images.weserv.nl/?url=i.ibb.co%2FwZDvBPL0%2FIMG-9006-JPG.jpg&amp;w=560&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/wZDvBPL0/IMG-9006-JPG.jpg" alt="A joyful close-up selfie of Harshita and Nitish" loading="lazy" decoding="async"><figcaption>Just us, always ♥</figcaption></figure>
       </div>
     </div>
   </section>
@@ -214,20 +226,20 @@ h2{font:clamp(2rem,7vw,4.2rem)/1.05 var(--display);letter-spacing:-.035em;margin
       <div class="event-list">
         <div class="day-break reveal">Day One · Friday, 11 December</div>
         <article class="event-card">
-          <div class="event-art-wrap"><img class="event-art" src="https://i.ibb.co/BKVjcb7c/Vibrant-Riverside-Haldi-Celebration.png" alt="Colourful illustrated Haldi celebration with traditional Indian wedding decorations" loading="lazy"></div>
+          <div class="event-art-wrap"><img class="event-art" src="https://images.weserv.nl/?url=i.ibb.co%2FBKVjcb7c%2FVibrant-Riverside-Haldi-Celebration.png&amp;w=1000&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/BKVjcb7c/Vibrant-Riverside-Haldi-Celebration.png" alt="Colourful illustrated Haldi celebration with traditional Indian wedding decorations" loading="lazy" decoding="async"></div>
           <div class="event-copy"><span class="event-number">01 · Turmeric & togetherness</span><h3>Haldi</h3><div class="event-details"><span class="event-pill">📅 11 December</span><span class="event-pill">☀️ 12 PM onwards</span></div><p class="event-note">A little haldi, a lot of laughter, and all the sunshine our hearts can hold.</p><span class="event-stickers" aria-hidden="true">✿</span></div>
         </article>
         <article class="event-card">
-          <div class="event-art-wrap"><img class="event-art" src="https://i.ibb.co/9kJq1s5r/Vibrant-Indian-Wedding-Sangeet-Celebration.png" alt="Colourful illustrated Indian Sangeet celebration with dancing and festive decor" loading="lazy"></div>
+          <div class="event-art-wrap"><img class="event-art" src="https://images.weserv.nl/?url=i.ibb.co%2F9kJq1s5r%2FVibrant-Indian-Wedding-Sangeet-Celebration.png&amp;w=1000&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/9kJq1s5r/Vibrant-Indian-Wedding-Sangeet-Celebration.png" alt="Colourful illustrated Indian Sangeet celebration with dancing and festive decor" loading="lazy" decoding="async"></div>
           <div class="event-copy"><span class="event-number">02 · Music & masti</span><h3>Sangeet</h3><div class="event-details"><span class="event-pill">📅 11 December</span><span class="event-pill">🌙 6 PM onwards</span></div><p class="event-note">The playlist is ready. The dance floor is waiting. Now all we need is you!</p><span class="event-stickers" aria-hidden="true">♫</span></div>
         </article>
         <div class="day-break reveal">Day Two · Saturday, 12 December</div>
         <article class="event-card">
-          <div class="event-art-wrap"><img class="event-art" src="https://i.ibb.co/LzX382bK/Colourful-Indian-Wedding-Procession.png" alt="Colourful Indian wedding Baraat illustration with decorated horse and dhol players" loading="lazy"></div>
+          <div class="event-art-wrap"><img class="event-art" src="https://images.weserv.nl/?url=i.ibb.co%2FLzX382bK%2FColourful-Indian-Wedding-Procession.png&amp;w=1000&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/LzX382bK/Colourful-Indian-Wedding-Procession.png" alt="Colourful Indian wedding Baraat illustration with decorated horse and dhol players" loading="lazy" decoding="async"></div>
           <div class="event-copy"><span class="event-number">03 · Here comes the baraat</span><h3>Baraat Nikasi</h3><div class="event-details"><span class="event-pill">📅 12 December</span><span class="event-pill">🥁 9 AM</span></div><p class="event-note">Dhol wajda, hearts dancing — come cheer the groom on his way to forever.</p><span class="event-stickers" aria-hidden="true">✹</span></div>
         </article>
         <article class="event-card">
-          <div class="event-art-wrap"><img class="event-art" src="https://i.ibb.co/J6jfc77/Lavish-Indian-Wedding-Reception-at-Night.png" alt="Lavish illustrated Indian wedding reception with ornate floral stage and festive lighting" loading="lazy"></div>
+          <div class="event-art-wrap"><img class="event-art" src="https://images.weserv.nl/?url=i.ibb.co%2FJ6jfc77%2FLavish-Indian-Wedding-Reception-at-Night.png&amp;w=1000&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/J6jfc77/Lavish-Indian-Wedding-Reception-at-Night.png" alt="Lavish illustrated Indian wedding reception with ornate floral stage and festive lighting" loading="lazy" decoding="async"></div>
           <div class="event-copy"><span class="event-number">04 · The grand finale</span><h3>Wedding Reception</h3><div class="event-details"><span class="event-pill">📅 12 December</span><span class="event-pill">✨ 6 PM onwards</span></div><p class="event-note">One beautiful beginning deserves one unforgettable evening. Let’s make memories.</p><span class="event-stickers" aria-hidden="true">❋</span></div>
         </article>
       </div>
@@ -243,7 +255,7 @@ h2{font:clamp(2rem,7vw,4.2rem)/1.05 var(--display);letter-spacing:-.035em;margin
           <iframe title="Map showing Xen Suites, Rajarhat, Kolkata" src="https://maps.google.com/maps?q=Xen%20Suites%2C%20Rajarhat%2C%20Kolkata&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           <div class="map-caption"><h3>Xen Suites</h3><p>Rajarhat, Kolkata, West Bengal</p><div class="map-actions"><a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Xen+Suites+Rajarhat+Kolkata" target="_blank" rel="noopener">↗ Open in Google Maps</a><a class="map-button secondary" href="#rsvp">RSVP with us ♥</a></div></div>
         </div>
-        <div class="location-photo reveal"><img src="https://i.ibb.co/rR4F7jmm/IMG-9379-JPG.jpg" alt="Harshita and Nitish walking hand in hand through a decorated event walkway" loading="lazy"><div class="location-photo-caption"><span>Meet us at the beginning of forever</span><p>We’ll save you a place<br>in all the happy memories.</p></div></div>
+        <div class="location-photo reveal"><img src="https://images.weserv.nl/?url=i.ibb.co%2FrR4F7jmm%2FIMG-9379-JPG.jpg&amp;w=560&amp;q=80&amp;output=webp" data-full-src="https://i.ibb.co/rR4F7jmm/IMG-9379-JPG.jpg" alt="Harshita and Nitish walking hand in hand through a decorated event walkway" loading="lazy" decoding="async"><div class="location-photo-caption"><span>Meet us at the beginning of forever</span><p>We’ll save you a place<br>in all the happy memories.</p></div></div>
       </div>
     </div>
   </section>
@@ -267,6 +279,10 @@ h2{font:clamp(2rem,7vw,4.2rem)/1.05 var(--display);letter-spacing:-.035em;margin
 </main>
 
 <footer class="footer"><div class="footer-monogram">H ✦ N</div><p>With love, laughter, blessings, and a little bit of wedding madness.</p><p>Harshita Nagar & Nitish Tiwari</p><small>11 · 12 December <span id="footerYear">2026</span> · Kolkata</small><small>POWERED BY <a href="https://www.instagram.com/multimediawallah/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">MULTIMEDIAWALLAH</a></small></footer>
+<div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Full-resolution image viewer" aria-hidden="true">
+  <button class="image-lightbox-close" id="imageLightboxClose" type="button" aria-label="Close image">×</button>
+  <img class="image-lightbox-image" id="imageLightboxImage" alt="" decoding="async" fetchpriority="high">
+</div>
 <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
 
 <script>
@@ -435,6 +451,86 @@ revealVisibleElements();
 const toTop=$('#toTop');window.addEventListener('scroll',()=>{toTop.classList.toggle('show',window.scrollY>650)},{passive:true});
 toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 $$('.nav-links a,.brand-mark').forEach(link=>link.addEventListener('click',()=>{const target=document.querySelector(link.getAttribute('href'));if(target)target.scrollIntoView({behavior:'smooth'});}));
+
+
+/* Full-resolution image viewer; closing restores the exact previous scroll position. */
+const imageLightbox = $('#imageLightbox');
+const imageLightboxImage = $('#imageLightboxImage');
+const imageLightboxClose = $('#imageLightboxClose');
+let imageViewerScrollY = 0;
+let imageViewerPreviousFocus = null;
+let imageViewerBodyStyles = null;
+
+function openFullResolutionImage(thumbnail){
+  const originalSource = thumbnail.dataset.fullSrc;
+  if(!originalSource) return;
+  imageViewerScrollY = window.scrollY || window.pageYOffset || 0;
+  imageViewerPreviousFocus = document.activeElement;
+  imageViewerBodyStyles = {
+    position: document.body.style.position,
+    top: document.body.style.top,
+    left: document.body.style.left,
+    right: document.body.style.right,
+    width: document.body.style.width,
+    overflow: document.body.style.overflow
+  };
+  imageLightboxImage.alt = thumbnail.alt || 'Full-resolution image';
+  imageLightboxImage.src = originalSource;
+  imageLightbox.classList.add('open');
+  imageLightbox.setAttribute('aria-hidden','false');
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${imageViewerScrollY}px`;
+  document.body.style.left = '0';
+  document.body.style.right = '0';
+  document.body.style.width = '100%';
+  document.body.style.overflow = 'hidden';
+  imageLightboxClose.focus({preventScroll:true});
+}
+
+function closeFullResolutionImage(){
+  if(!imageLightbox.classList.contains('open')) return;
+  imageLightbox.classList.remove('open');
+  imageLightbox.setAttribute('aria-hidden','true');
+  imageLightboxImage.removeAttribute('src');
+  if(imageViewerBodyStyles){
+    document.body.style.position = imageViewerBodyStyles.position;
+    document.body.style.top = imageViewerBodyStyles.top;
+    document.body.style.left = imageViewerBodyStyles.left;
+    document.body.style.right = imageViewerBodyStyles.right;
+    document.body.style.width = imageViewerBodyStyles.width;
+    document.body.style.overflow = imageViewerBodyStyles.overflow;
+  }
+  window.scrollTo({top:imageViewerScrollY,left:0,behavior:'auto'});
+  if(imageViewerPreviousFocus && typeof imageViewerPreviousFocus.focus === 'function'){
+    imageViewerPreviousFocus.focus({preventScroll:true});
+  }
+}
+
+$$('img[data-full-src]').forEach(img=>{
+  img.tabIndex = 0;
+  img.setAttribute('role','button');
+  if(!img.hasAttribute('aria-label')) img.setAttribute('aria-label',`${img.alt || 'Image'}. Open full-resolution image`);
+  img.addEventListener('click',()=>openFullResolutionImage(img));
+  img.addEventListener('keydown',event=>{
+    if(event.key === 'Enter' || event.key === ' '){event.preventDefault();openFullResolutionImage(img);}
+  });
+  // If the thumbnail service cannot serve an image, gracefully use the original.
+  img.addEventListener('error',function(){
+    if(!this.dataset.thumbnailFallback && this.dataset.fullSrc){
+      this.dataset.thumbnailFallback = 'true';
+      this.src = this.dataset.fullSrc;
+    }
+  });
+});
+
+imageLightboxClose.addEventListener('click',closeFullResolutionImage);
+imageLightbox.addEventListener('click',event=>{
+  if(event.target === imageLightbox) closeFullResolutionImage();
+});
+document.addEventListener('keydown',event=>{
+  if(event.key === 'Escape') closeFullResolutionImage();
+});
+
 </script>
 </body>
 </html>
